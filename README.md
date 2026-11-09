@@ -1,5 +1,8 @@
 # MCUIK – Modern Common UI Kit
 
+> 📖 **Documentación completa** (para personas y para IA): carpeta [`docs/`](docs/index.md), publicable como GitHub Pages. Resumen para modelos de lenguaje: [`llms.txt`](llms.txt). Asistentes de IA: empezad por [`docs/guia-ia.md`](docs/guia-ia.md).
+
+
 Kit de interfaz para misiones y mods de Arma Reforger:
 - iconos propios;
 - tema de colores;

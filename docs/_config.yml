@@ -1,0 +1,11 @@
+title: MCUIK · Modern Common UI Kit
+description: Kit de interfaz moderno para misiones y mods de Arma Reforger (Enfusion / Enforce Script).
+remote_theme: just-the-docs/just-the-docs@v0.10.1
+plugins:
+  - jekyll-remote-theme
+color_scheme: dark
+search_enabled: true
+heading_anchors: true
+aux_links:
+  "MCES (tienda y economía)": "../MCES/"
+footer_content: "MCUIK · documentación para personas y para IA. Ver también <code>llms.txt</code> en la raíz del repositorio."
