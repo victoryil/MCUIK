@@ -3,6 +3,8 @@ title: Inicio
 nav_order: 1
 ---
 
+![Portada](assets/portada.png)
+
 # MCUIK · Modern Common UI Kit
 
 Kit de interfaz para **Arma Reforger** (motor Enfusion, Enforce Script). Sirve para que una misión o un mod tenga un HUD y unas ventanas modernas sin pelearse con los layouts:
