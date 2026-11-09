@@ -1,0 +1,41 @@
+# MCUIK - Modern Common UI Kit
+
+> UI kit for Arma Reforger (Enfusion engine, Enforce Script). Mod GUID B8DFCB8639E9DA37. It provides:
+> - its own icon atlas (60 white icons, tinted by code);
+> - a colour theme;
+> - composable HUD pieces: panel, chip, row, bar, text, title, divider, HBox/VBox;
+> - animated notifications: toasts on the right; dialogue lines at the bottom centre with a voice hook;
+> - list and event windows on top of SCR_ConfigurableDialogUi.
+> The documentation is in Spanish.
+
+Key facts for agents:
+- **Client only.** Never create widgets when System.IsConsoleApp() is true (dedicated server).
+- **Creating and updating pieces.**
+  - Create pieces once with MCUIK.<Piece>(parent, ...).
+  - Update them with MCUIK.Set<Piece>(widget, ...).
+  - Find child parts by widget name.
+- **GUIDs and icon names.** Never invent GUIDs: use MCUIK_Res.* (layouts, imageset, dialog presets). Use MCUIK_Icon.* or the icon names listed in docs/iconos.md.
+- **Default colours.** Store a default Color in a LOCAL variable, never by reassigning a parameter. A new object held only by a parameter is freed immediately: "NULL pointer to instance".
+- **Strings.** Use MCUIK.Upper() rather than ToUpper(), which works in place and does not handle accents. In string.Format, write the percent sign as a single "%".
+- **New game.** Call MCUIK_Notify.Reset() when a new game starts (static state survives "Reload Game").
+
+
+## Links
+- Workshop: https://reforger.armaplatform.com/workshop/B8DFCB8639E9DA37
+- Source code: https://github.com/victoryil/MCUIK
+- Docs website: https://victoryil.github.io/MCUIK/
+- Raw Markdown docs: https://github.com/victoryil/MCUIK/tree/main/docs
+
+## Docs
+- [Inicio](https://github.com/victoryil/MCUIK/blob/main/docs/index.md): overview, screenshots, page index.
+- [Empezar](https://github.com/victoryil/MCUIK/blob/main/docs/empezar.md): add the dependency, first panel, first toast.
+- [Piezas](https://github.com/victoryil/MCUIK/blob/main/docs/piezas.md): Panel/Chip/Row/Bar/Text/Title/Divider/Spacer/HBox/VBox, placement (Place with anchors), widget part names.
+- [Avisos y diálogos](https://github.com/victoryil/MCUIK/blob/main/docs/avisos.md): MCUIK_Notify.Toast / Dialogue / OnDialogueShown / Reset.
+- [Ventanas](https://github.com/victoryil/MCUIK/blob/main/docs/ventanas.md): presets "mcuik_list" and "mcuik_event" (MCUIK_Res.C_DIALOGS), list rows (MCUIK_Res.L_LISTROW), custom windows.
+- [Iconos y tema](https://github.com/victoryil/MCUIK/blob/main/docs/iconos.md): icon names by group; MCUIK_Theme colours.
+- [Herramientas](https://github.com/victoryil/MCUIK/blob/main/docs/herramientas.md): tools/build.py pipeline (SVG icons -> png -> .edds without Workbench, layouts, metas, MCUIK_Res.c).
+- [Guía para IA](https://github.com/victoryil/MCUIK/blob/main/docs/guia-ia.md): step-by-step recipe, rules that prevent real errors, how to verify.
+- [API](https://github.com/victoryil/MCUIK/blob/main/docs/api.md): every public class and method (generated from code).
+
+## Related
+- MCES - Modern Common Economy & Shop (GUID AE9A7FAB88A56E07). It is a configurable shop built on MCUIK.

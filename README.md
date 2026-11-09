@@ -1,5 +1,7 @@
 # MCUIK – Modern Common UI Kit
 
+> 🧩 **Workshop:** https://reforger.armaplatform.com/workshop/B8DFCB8639E9DA37 · **Docs:** https://victoryil.github.io/MCUIK/ · **Código:** https://github.com/victoryil/MCUIK
+
 > 📖 **Documentación completa** (para personas y para IA): carpeta [`docs/`](docs/index.md), publicable como GitHub Pages. Resumen para modelos de lenguaje: [`llms.txt`](llms.txt). Asistentes de IA: empezad por [`docs/guia-ia.md`](docs/guia-ia.md).
 
 

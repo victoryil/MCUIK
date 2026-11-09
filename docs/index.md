@@ -34,6 +34,17 @@ No depende de ninguna misión. Se añade como **dependencia** y se usa desde scr
 
 ![Mapa con ficha de zona](assets/mapa.png)
 
+
+## Enlaces
+
+| | |
+|---|---|
+| Workshop (suscribirse / dependencia) | [https://reforger.armaplatform.com/workshop/B8DFCB8639E9DA37](https://reforger.armaplatform.com/workshop/B8DFCB8639E9DA37) |
+| Código fuente | [https://github.com/victoryil/MCUIK](https://github.com/victoryil/MCUIK) |
+| Esta documentación | [https://victoryil.github.io/MCUIK/](https://victoryil.github.io/MCUIK/) |
+| Resumen para IA | [https://github.com/victoryil/MCUIK/blob/main/llms.txt](https://github.com/victoryil/MCUIK/blob/main/llms.txt) |
+| Documentación en Markdown (para leer sin la web) | [https://github.com/victoryil/MCUIK/tree/main/docs](https://github.com/victoryil/MCUIK/tree/main/docs) |
+
 ## Qué hay en esta documentación
 
 | Página | Para qué |

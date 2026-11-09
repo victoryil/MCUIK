@@ -7,6 +7,14 @@ nav_order: 8
 
 Esta página está pensada para que un asistente (Claude, GPT, Copilot…) configure y use MCUIK en una misión de Arma Reforger sin romper nada. Una persona también puede usarla como lista de comprobación.
 
+
+## Dónde está todo
+
+- Workshop: https://reforger.armaplatform.com/workshop/B8DFCB8639E9DA37 (GUID `B8DFCB8639E9DA37`, versión publicada 1.0.0)
+- Código y documentación en Markdown: https://github.com/victoryil/MCUIK (rama `main`, carpeta `docs/`)
+- Resumen para modelos: https://github.com/victoryil/MCUIK/blob/main/llms.txt
+- Web: https://victoryil.github.io/MCUIK/
+
 ## Contexto que debes saber
 
 - El lenguaje es **Enforce Script** (parecido a C#/C++, motor Enfusion). No es C#: no hay `var`, ni lambdas, ni LINQ, ni `using`.
