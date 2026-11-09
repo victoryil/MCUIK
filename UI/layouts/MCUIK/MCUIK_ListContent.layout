@@ -1,0 +1,43 @@
+FrameWidgetClass {
+ Name "ContentRoot"
+ Slot LayoutSlot "{ABAEA1762483CD2A}" {
+ }
+ {
+  SizeLayoutWidgetClass "{9112F5FC1C9287DC}" {
+   Name "Size"
+   Slot FrameWidgetSlot "{7713E0CD5690B5F4}" {
+    Anchor 0.5 0.5 0.5 0.5
+    OffsetLeft 0
+    OffsetTop 0
+    SizeX 940
+    OffsetRight -940
+    SizeY 600
+    OffsetBottom -600
+    Alignment 0.5 0.5
+   }
+   AllowMinDesiredWidth 1
+   MinDesiredWidth 940
+   AllowMinDesiredHeight 1
+   MinDesiredHeight 600
+   {
+    ScrollLayoutWidgetClass "{90839792CDD00FDF}" {
+     Name "ScrollList"
+     Slot AlignableSlot "{B0BB5DC0325863EB}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      VerticalLayoutWidgetClass "{08C783E7FFF3F44A}" {
+       Name "List"
+       Slot AlignableSlot "{E66A2ED0DE89D246}" {
+        HorizontalAlign 3
+        VerticalAlign 0
+        Padding 0 0 12 0
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

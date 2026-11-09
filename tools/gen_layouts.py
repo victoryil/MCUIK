@@ -34,7 +34,7 @@ def emit(w, slot_kind, depth, file_seed, root=False):
 	ind = " " * depth
 	head = f"{ind}{w.cls}Class" + ("" if root else " " + gid(file_seed + w.name)) + " {"
 	out = [head, f'{ind} Name "{w.name}"']
-	if w.slot and slot_kind:
+	if slot_kind and (w.slot or root):
 		out.append(f"{ind} Slot {slot_kind} {gid(file_seed + w.name + 'slot')} {{")
 		for k, v in w.slot.items():
 			out.append(f"{ind}  {k} {v}")
@@ -48,7 +48,8 @@ def emit(w, slot_kind, depth, file_seed, root=False):
 				out += [f"{ind}  OutlineSize 1", f"{ind}  OutlineColor 0 0 0 0.6"]
 			out.append(f"{ind} }}")
 		else:
-			out.append(f"{ind} {p}")
+			for line in str(p).split("\n"):
+				out.append(f"{ind} {line}")
 	if w.children:
 		kind = {"OverlayWidget": "OverlayWidgetSlot", "HorizontalLayoutWidget": "LayoutSlot", "VerticalLayoutWidget": "LayoutSlot",
 			"SizeLayoutWidget": "AlignableSlot", "FrameWidget": "FrameWidgetSlot", "ButtonWidget": "ButtonWidgetSlot",
@@ -61,10 +62,11 @@ def emit(w, slot_kind, depth, file_seed, root=False):
 	return out
 
 
-def save(name, root):
+def save(name, root, root_slot=None, out_dir=None):
+	"""root_slot: tipo de slot de la raiz (p. ej. LayoutSlot para el contenido de un dialogo)"""
 	_counter[0] = 0
-	lines = emit(root, None, 0, name, root=True)
-	io.open(os.path.join(OUT, name + ".layout"), "w", encoding="utf-8", newline="\n").write("\n".join(lines) + "\n")
+	lines = emit(root, root_slot, 0, name, root=True)
+	io.open(os.path.join(out_dir or OUT, name + ".layout"), "w", encoding="utf-8", newline="\n").write("\n".join(lines) + "\n")
 	print("layout", name)
 
 
@@ -222,3 +224,84 @@ def build():
 
 if __name__ == "__main__":
 	build()
+
+
+MODBTN = "{7A737AACCAA99F51}Configs/WLib/WLib_ModularButton_ListMenuLine.conf"
+
+
+def button(name, children, slot=None):
+	comp = "components {\n SCR_ModularButtonComponent " + gid(name + "btn") + ' : "' + MODBTN + '" {\n }\n}'
+	return W("ButtonWidget", name, slot or dict(FILL), ["Color 1 1 1 0", comp], children)
+
+
+def dialog_content(name, w, h, inner):
+	"""Contenido de un SCR_ConfigurableDialogUi: marco con tamano fijo centrado"""
+	size = sized("Size", None, None, {"Anchor": "0.5 0.5 0.5 0.5", "OffsetLeft": 0, "OffsetTop": 0, "SizeX": w, "OffsetRight": -w, "SizeY": h, "OffsetBottom": -h, "Alignment": "0.5 0.5"}, [inner])
+	size.props += ["AllowMinDesiredWidth 1", f"MinDesiredWidth {w}", "AllowMinDesiredHeight 1", f"MinDesiredHeight {h}"]
+	return W("FrameWidget", "ContentRoot", {}, [], [size])
+
+
+def build_windows():
+	# fila de lista pulsable: franja, icono, texto (admite <b> y colores) y valor a la derecha
+	save("MCUIK_ListRow", sized("RowRoot", None, None, {"HorizontalAlign": 3, "Padding": "0 2 0 2"}, [
+		button("RowBtn", [
+			overlay("RowOv", [
+				img("Background", "0.07 0.1 0.125 0.85"),
+				sized("StripSize", 3, None, {"HorizontalAlign": 0, "VerticalAlign": 3}, [img("Strip", "1 0.78 0.17 0.9")]),
+				hbox("Row", [
+					W("ImageWidget", "Icon", {"VerticalAlign": 1, "Padding": "0 0 12 0"}, [f'Texture "{ICONS}"', 'Image "chevron"', f"Color {ACCENT}", "Size 22 22"]),
+					text("Name", "Fila", 18, REG, TEXT, {"SizeMode": "Fill", "VerticalAlign": 1}, rich=True, wrap=True),
+					text("Price", "", 18, BOLD, ACCENT, {"VerticalAlign": 1, "Padding": "12 0 0 0"}),
+				], {"HorizontalAlign": 3, "VerticalAlign": 3, "Padding": "14 10 16 10"}),
+			]),
+		]),
+	]))
+	# lista con desplazamiento para ventanas
+	save("MCUIK_ListContent", dialog_content("ListContent", 940, 600,
+		W("ScrollLayoutWidget", "ScrollList", {"HorizontalAlign": 3, "VerticalAlign": 3}, [], [
+			vbox("List", [], {"HorizontalAlign": 3, "VerticalAlign": 0, "Padding": "0 0 12 0"}),
+		])), "LayoutSlot")
+	# evento (inicio de acto, mision nueva...): insignia grande y texto
+	save("MCUIK_EventContent", dialog_content("EventContent", 820, 300,
+		hbox("EventRow", [
+			icon_badge("Badge", 96, "star", "0 0 24 0"),
+			vbox("EventTexts", [
+				text("Kicker", "", 15, BOLD, ACCENT, {"Padding": "0 0 0 6"}),
+				text("Message", "", 21, REG, TEXT, rich=True, wrap=True),
+			], {"SizeMode": "Fill", "VerticalAlign": 1}),
+		], {"HorizontalAlign": 3, "VerticalAlign": 1})), "LayoutSlot")
+	# presets de dialogo del kit (lista y evento) sobre el marco grande del juego
+	conf = """SCR_ConfigurableDialogUiPresets {
+ m_aPresets {
+  SCR_ConfigurableDialogUiPreset "{5E1A2B3C4D5E6F01}" {
+   m_sLayout "{604721ED8E6ED459}UI/layouts/Menus/Dialogs/ConfigurableDialog_Big.layout"
+   m_sContentLayout "%LIST%"
+   m_sTag "mcuik_list"
+   m_sTitle ""
+   m_aButtons {
+    SCR_ConfigurableDialogUiButtonPreset "{5E1A2B3C4D5E6F02}" {
+     m_sTag "cancel"
+     m_sActionName "MenuBack"
+     m_sLabel "Cerrar"
+     m_eAlign RIGHT
+    }
+   }
+  }
+  SCR_ConfigurableDialogUiPreset "{5E1A2B3C4D5E6F03}" {
+   m_sLayout "{604721ED8E6ED459}UI/layouts/Menus/Dialogs/ConfigurableDialog_Big.layout"
+   m_sContentLayout "%EVENT%"
+   m_sTag "mcuik_event"
+   m_sTitle ""
+   m_aButtons {
+    SCR_ConfigurableDialogUiButtonPreset "{5E1A2B3C4D5E6F04}" {
+     m_sTag "confirm"
+     m_sActionName "MenuSelect"
+     m_sLabel "Entendido"
+     m_eAlign RIGHT
+    }
+   }
+  }
+ }
+}
+"""
+	return conf

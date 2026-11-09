@@ -1,0 +1,105 @@
+SizeLayoutWidgetClass {
+ Name "RowRoot"
+ {
+  ButtonWidgetClass "{AD136632789DD15F}" {
+   Name "RowBtn"
+   Slot AlignableSlot "{1290B33BBFE5A010}" {
+    HorizontalAlign 3
+    VerticalAlign 3
+   }
+   Color 1 1 1 0
+   components {
+    SCR_ModularButtonComponent "{A1543CE39B317EA3}" : "{7A737AACCAA99F51}Configs/WLib/WLib_ModularButton_ListMenuLine.conf" {
+    }
+   }
+   {
+    OverlayWidgetClass "{06A644AF7D207A29}" {
+     Name "RowOv"
+     Slot ButtonWidgetSlot "{CCF88F9A8738659C}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      ImageWidgetClass "{C472BA037FDCF5B5}" {
+       Name "Background"
+       Slot OverlayWidgetSlot "{FF5B4DE8C90165EA}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       Color 0.07 0.1 0.125 0.85
+      }
+      SizeLayoutWidgetClass "{44D24CE3DB313F07}" {
+       Name "StripSize"
+       Slot OverlayWidgetSlot "{80947DF77D70C43B}" {
+        HorizontalAlign 0
+        VerticalAlign 3
+       }
+       AllowWidthOverride 1
+       WidthOverride 3
+       {
+        ImageWidgetClass "{76ED2BDE72FCAFB2}" {
+         Name "Strip"
+         Slot AlignableSlot "{F40BD6FDCFFB243B}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         Color 1 0.78 0.17 0.9
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{D8B18AC6D801F0C0}" {
+       Name "Row"
+       Slot OverlayWidgetSlot "{BA082C2829E89FDA}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+        Padding 14 10 16 10
+       }
+       {
+        ImageWidgetClass "{C58A966604C836CB}" {
+         Name "Icon"
+         Slot LayoutSlot "{DC4DEAB0B4B36F45}" {
+          VerticalAlign 1
+          Padding 0 0 12 0
+         }
+         Texture "{3BA4B2A75ED412DC}UI/Textures/MCUIK/MCUIK_Icons.imageset"
+         Image "chevron"
+         Color 1 0.78 0.17 1
+         Size 22 22
+        }
+        RichTextWidgetClass "{80044A83682A674D}" {
+         Name "Name"
+         Slot LayoutSlot "{62F065D57D253FDE}" {
+          SizeMode Fill
+          VerticalAlign 1
+         }
+         Color 0.91 0.93 0.94 1
+         Text "Fila"
+         "Font Size" 18
+         "Min Font Size" 12
+         Wrap 1
+         FontProperties FontProperties "{7EB3EFB5531F5B07}" {
+          Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+         }
+        }
+        TextWidgetClass "{899BFFCE955404CF}" {
+         Name "Price"
+         Slot LayoutSlot "{1BAFD83A404AB5E7}" {
+          VerticalAlign 1
+          Padding 12 0 0 0
+         }
+         Color 1 0.78 0.17 1
+         Text ""
+         "Font Size" 18
+         "Min Font Size" 12
+         FontProperties FontProperties "{6587FFCA005EDF20}" {
+          Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

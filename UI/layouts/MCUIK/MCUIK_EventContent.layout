@@ -1,0 +1,111 @@
+FrameWidgetClass {
+ Name "ContentRoot"
+ Slot LayoutSlot "{41D1D7AB708AD0AE}" {
+ }
+ {
+  SizeLayoutWidgetClass "{031A476C783D28EB}" {
+   Name "Size"
+   Slot FrameWidgetSlot "{EDF54332E6ECB03B}" {
+    Anchor 0.5 0.5 0.5 0.5
+    OffsetLeft 0
+    OffsetTop 0
+    SizeX 820
+    OffsetRight -820
+    SizeY 300
+    OffsetBottom -300
+    Alignment 0.5 0.5
+   }
+   AllowMinDesiredWidth 1
+   MinDesiredWidth 820
+   AllowMinDesiredHeight 1
+   MinDesiredHeight 300
+   {
+    HorizontalLayoutWidgetClass "{606688A328BA825E}" {
+     Name "EventRow"
+     Slot AlignableSlot "{DFB54C61333DF1AF}" {
+      HorizontalAlign 3
+      VerticalAlign 1
+     }
+     {
+      SizeLayoutWidgetClass "{D68630735A7FF06F}" {
+       Name "BadgeSize"
+       Slot LayoutSlot "{ED5E24177BF003A0}" {
+        VerticalAlign 1
+        Padding 0 0 24 0
+       }
+       AllowWidthOverride 1
+       WidthOverride 96
+       AllowHeightOverride 1
+       HeightOverride 96
+       {
+        OverlayWidgetClass "{07B1A275C74919AE}" {
+         Name "BadgeOv"
+         Slot AlignableSlot "{CB98758B59BD561C}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         {
+          ImageWidgetClass "{49DC0F66F984D565}" {
+           Name "BadgeBg"
+           Slot OverlayWidgetSlot "{00D343D2EE5A2741}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           Texture "{3BA4B2A75ED412DC}UI/Textures/MCUIK/MCUIK_Icons.imageset"
+           Image "hex"
+           Color 1 0.78 0.17 0.2
+          }
+          ImageWidgetClass "{5A5C89CB61A66780}" {
+           Name "BadgeIcon"
+           Slot OverlayWidgetSlot "{D0E88107A7A66ECF}" {
+            HorizontalAlign 1
+            VerticalAlign 1
+           }
+           Texture "{3BA4B2A75ED412DC}UI/Textures/MCUIK/MCUIK_Icons.imageset"
+           Image "star"
+           Color 1 0.78 0.17 1
+           Size 53 53
+          }
+         }
+        }
+       }
+      }
+      VerticalLayoutWidgetClass "{D3BAC739AFF09455}" {
+       Name "EventTexts"
+       Slot LayoutSlot "{52B09466788D67A8}" {
+        SizeMode Fill
+        VerticalAlign 1
+       }
+       {
+        TextWidgetClass "{001C84DAC2C266E2}" {
+         Name "Kicker"
+         Slot LayoutSlot "{A8E8BC53DF02D9A9}" {
+          Padding 0 0 0 6
+         }
+         Color 1 0.78 0.17 1
+         Text ""
+         "Font Size" 15
+         "Min Font Size" 10
+         FontProperties FontProperties "{4CEF4AFAB56C6A7F}" {
+          Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+         }
+        }
+        RichTextWidgetClass "{09B81B6346F3DB08}" {
+         Name "Message"
+         Color 0.91 0.93 0.94 1
+         Text ""
+         "Font Size" 21
+         "Min Font Size" 15
+         Wrap 1
+         FontProperties FontProperties "{B7AB1190694A64FB}" {
+          Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}
