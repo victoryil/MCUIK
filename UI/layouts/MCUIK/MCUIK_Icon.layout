@@ -1,0 +1,7 @@
+ImageWidgetClass {
+ Name "Icon"
+ Texture "{3BA4B2A75ED412DC}UI/Textures/MCUIK/MCUIK_Icons.imageset"
+ Image "dot"
+ Color 1 1 1 1
+ Size 24 24
+}

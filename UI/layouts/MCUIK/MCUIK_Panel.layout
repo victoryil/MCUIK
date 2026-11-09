@@ -1,0 +1,123 @@
+SizeLayoutWidgetClass {
+ Name "PanelRoot"
+ AllowWidthOverride 1
+ WidthOverride 320
+ {
+  OverlayWidgetClass "{89AC8ECC1F4A4028}" {
+   Name "Ov"
+   Slot AlignableSlot "{EF48387211C58901}" {
+    HorizontalAlign 3
+    VerticalAlign 3
+   }
+   {
+    ImageWidgetClass "{463DC0175015D142}" {
+     Name "Bg"
+     Slot OverlayWidgetSlot "{7378299AD5135F35}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Color 0.055 0.078 0.098 0.9
+    }
+    VerticalLayoutWidgetClass "{2380DC9F373C5EA3}" {
+     Name "Col"
+     Slot OverlayWidgetSlot "{260FEB86665AFFCF}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      OverlayWidgetClass "{ECD33A1C54207544}" {
+       Name "Header"
+       Slot LayoutSlot "{1303927B0B783730}" {
+        HorizontalAlign 3
+       }
+       {
+        ImageWidgetClass "{2A75820354BBC8D1}" {
+         Name "HeaderBg"
+         Slot OverlayWidgetSlot "{2D1A0D20AF1FFB5F}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         Color 0.03 0.045 0.058 0.95
+        }
+        HorizontalLayoutWidgetClass "{FED7B144C6841863}" {
+         Name "HeaderRow"
+         Slot OverlayWidgetSlot "{FC6E88CD4FFCDD5D}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+          Padding 0 7 0 7
+         }
+         {
+          ImageWidgetClass "{F12120C534656CFB}" {
+           Name "HeaderIcon"
+           Slot LayoutSlot "{E267FAEF0C998EA9}" {
+            VerticalAlign 1
+            Padding 12 0 8 0
+           }
+           Texture "{3BA4B2A75ED412DC}UI/Textures/MCUIK/MCUIK_Icons.imageset"
+           Image "star"
+           Color 1 0.78 0.17 1
+           Size 18 18
+          }
+          TextWidgetClass "{90C33A0567FEC881}" {
+           Name "HeaderTitle"
+           Slot LayoutSlot "{F8ABE0AE13EB482D}" {
+            SizeMode Fill
+            VerticalAlign 1
+           }
+           Color 1 0.78 0.17 1
+           Text "TITULO"
+           "Font Size" 15
+           "Min Font Size" 10
+           FontProperties FontProperties "{2BAE05ED5047BE7C}" {
+            Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+           }
+          }
+          TextWidgetClass "{C2E4638D4CE79DB9}" {
+           Name "HeaderRight"
+           Slot LayoutSlot "{D8EC8811CF4043BB}" {
+            VerticalAlign 1
+            Padding 8 0 12 0
+           }
+           Color 0.56 0.63 0.68 1
+           Text ""
+           "Font Size" 15
+           "Min Font Size" 10
+           FontProperties FontProperties "{E9CFB649780A5A55}" {
+            Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+           }
+          }
+         }
+        }
+       }
+      }
+      SizeLayoutWidgetClass "{93CC173958129DBF}" {
+       Name "AccentSize"
+       Slot LayoutSlot "{4CE223D83E55A6ED}" {
+        HorizontalAlign 3
+       }
+       AllowHeightOverride 1
+       HeightOverride 2
+       {
+        ImageWidgetClass "{05CA61B2B71C5EF5}" {
+         Name "Accent"
+         Slot AlignableSlot "{FAE4268EEE85DD62}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         Color 1 0.78 0.17 0.85
+        }
+       }
+      }
+      VerticalLayoutWidgetClass "{915F0D770DDA6A24}" {
+       Name "Content"
+       Slot LayoutSlot "{BC1289CAFB7375DF}" {
+        HorizontalAlign 3
+        Padding 12 8 12 10
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

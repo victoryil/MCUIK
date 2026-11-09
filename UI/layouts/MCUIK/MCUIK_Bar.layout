@@ -1,0 +1,45 @@
+SizeLayoutWidgetClass {
+ Name "BarRoot"
+ AllowWidthOverride 1
+ WidthOverride 200
+ AllowHeightOverride 1
+ HeightOverride 6
+ {
+  OverlayWidgetClass "{1C873A588F2CD1FF}" {
+   Name "Ov"
+   Slot AlignableSlot "{C8C287FD4408DB23}" {
+    HorizontalAlign 3
+    VerticalAlign 3
+   }
+   {
+    ImageWidgetClass "{F68D2F7CDF7CF2AB}" {
+     Name "Track"
+     Slot OverlayWidgetSlot "{72246FE2BDB80E63}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Color 1 1 1 0.12
+    }
+    SizeLayoutWidgetClass "{94ADC04238AD57B5}" {
+     Name "FillSize"
+     Slot OverlayWidgetSlot "{43E967D7BAAA115F}" {
+      HorizontalAlign 0
+      VerticalAlign 3
+     }
+     AllowWidthOverride 1
+     WidthOverride 0
+     {
+      ImageWidgetClass "{E88CFDC9E903C597}" {
+       Name "Fill"
+       Slot AlignableSlot "{BA894AF2B429C9BE}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       Color 1 0.78 0.17 1
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,44 @@
+HorizontalLayoutWidgetClass {
+ Name "ChipRoot"
+ {
+  ImageWidgetClass "{7698307C772F892B}" {
+   Name "Icon"
+   Slot LayoutSlot "{F8C5A2BB7F3AAE56}" {
+    VerticalAlign 1
+    Padding 0 0 7 0
+   }
+   Texture "{3BA4B2A75ED412DC}UI/Textures/MCUIK/MCUIK_Icons.imageset"
+   Image "money"
+   Color 1 0.78 0.17 1
+   Size 22 22
+  }
+  VerticalLayoutWidgetClass "{AD5331DD88EC1169}" {
+   Name "Texts"
+   Slot LayoutSlot "{379EDA0C0654525F}" {
+    VerticalAlign 1
+   }
+   {
+    TextWidgetClass "{23FCD60E82DEF6DA}" {
+     Name "Value"
+     Color 0.91 0.93 0.94 1
+     Text "0"
+     "Font Size" 20
+     "Min Font Size" 14
+     FontProperties FontProperties "{F71FDE20B0331518}" {
+      Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+     }
+    }
+    TextWidgetClass "{B1A345033E628A73}" {
+     Name "Label"
+     Color 0.56 0.63 0.68 1
+     Text ""
+     "Font Size" 12
+     "Min Font Size" 10
+     FontProperties FontProperties "{E2BC3FB264056DE7}" {
+      Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+     }
+    }
+   }
+  }
+ }
+}

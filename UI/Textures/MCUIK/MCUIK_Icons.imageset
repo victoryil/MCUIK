@@ -1,0 +1,371 @@
+ImageSetClass {
+ RefSize 1024 1024
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{3A51A29D8F0C7E21}UI/Textures/MCUIK/MCUIK_Icons.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass money {
+   Name "money"
+   Pos 0 0
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass materials {
+   Name "materials"
+   Pos 128 0
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass support {
+   Name "support"
+   Pos 256 0
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass recruit {
+   Name "recruit"
+   Pos 384 0
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass people {
+   Name "people"
+   Pos 512 0
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass zone {
+   Name "zone"
+   Pos 640 0
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass time {
+   Name "time"
+   Pos 768 0
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass star {
+   Name "star"
+   Pos 896 0
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass objective {
+   Name "objective"
+   Pos 0 128
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass radio {
+   Name "radio"
+   Pos 128 128
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass journal {
+   Name "journal"
+   Pos 256 128
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass intel {
+   Name "intel"
+   Pos 384 128
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass phone {
+   Name "phone"
+   Pos 512 128
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass chat {
+   Name "chat"
+   Pos 640 128
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass map {
+   Name "map"
+   Pos 768 128
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass pin {
+   Name "pin"
+   Pos 896 128
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass shop {
+   Name "shop"
+   Pos 0 256
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass garage {
+   Name "garage"
+   Pos 128 256
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass vehicle {
+   Name "vehicle"
+   Pos 256 256
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass weapon {
+   Name "weapon"
+   Pos 384 256
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass ammo {
+   Name "ammo"
+   Pos 512 256
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass medical {
+   Name "medical"
+   Pos 640 256
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass explosive {
+   Name "explosive"
+   Pos 768 256
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass clothing {
+   Name "clothing"
+   Pos 896 256
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass tool {
+   Name "tool"
+   Pos 0 384
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass build {
+   Name "build"
+   Pos 128 384
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass storage {
+   Name "storage"
+   Pos 256 384
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass cover_civil {
+   Name "cover_civil"
+   Pos 384 384
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass cover_military {
+   Name "cover_military"
+   Pos 512 384
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass cover_watched {
+   Name "cover_watched"
+   Pos 640 384
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass cover_hidden {
+   Name "cover_hidden"
+   Pos 768 384
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass cover_disguised {
+   Name "cover_disguised"
+   Pos 896 384
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass alert {
+   Name "alert"
+   Pos 0 512
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass threat {
+   Name "threat"
+   Pos 128 512
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass town {
+   Name "town"
+   Pos 256 512
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass base {
+   Name "base"
+   Pos 384 512
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass outpost {
+   Name "outpost"
+   Pos 512 512
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass airfield {
+   Name "airfield"
+   Pos 640 512
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass port {
+   Name "port"
+   Pos 768 512
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass factory {
+   Name "factory"
+   Pos 896 512
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass resource {
+   Name "resource"
+   Pos 0 640
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass camp {
+   Name "camp"
+   Pos 128 640
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass faction_spain {
+   Name "faction_spain"
+   Pos 256 640
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass faction_trumpet {
+   Name "faction_trumpet"
+   Pos 384 640
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass faction_putoncin {
+   Name "faction_putoncin"
+   Pos 512 640
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass faction_civil {
+   Name "faction_civil"
+   Pos 640 640
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass check {
+   Name "check"
+   Pos 768 640
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass close {
+   Name "close"
+   Pos 896 640
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass plus {
+   Name "plus"
+   Pos 0 768
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass minus {
+   Name "minus"
+   Pos 128 768
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass arrow {
+   Name "arrow"
+   Pos 256 768
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass chevron {
+   Name "chevron"
+   Pos 384 768
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass info {
+   Name "info"
+   Pos 512 768
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass lock {
+   Name "lock"
+   Pos 640 768
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass key {
+   Name "key"
+   Pos 768 768
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass night {
+   Name "night"
+   Pos 896 768
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass dot {
+   Name "dot"
+   Pos 0 896
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass ring {
+   Name "ring"
+   Pos 128 896
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass diamond {
+   Name "diamond"
+   Pos 256 896
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass hex {
+   Name "hex"
+   Pos 384 896
+   Size 128 128
+   Flags 0
+  }
+ }
+}

@@ -1,0 +1,150 @@
+SizeLayoutWidgetClass {
+ Name "ToastRoot"
+ AllowWidthOverride 1
+ WidthOverride 430
+ {
+  OverlayWidgetClass "{6AE84F460E77A554}" {
+   Name "Ov"
+   Slot AlignableSlot "{180E9CA91B6897DE}" {
+    HorizontalAlign 3
+    VerticalAlign 3
+   }
+   {
+    ImageWidgetClass "{44BD2E1CBC096AD5}" {
+     Name "Bg"
+     Slot OverlayWidgetSlot "{085996D248DEC421}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Color 0.055 0.078 0.098 0.9
+    }
+    HorizontalLayoutWidgetClass "{0FF637EC5946134D}" {
+     Name "Row"
+     Slot OverlayWidgetSlot "{FD317F62590A7C58}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      SizeLayoutWidgetClass "{B0421FC5438DF240}" {
+       Name "StripSize"
+       Slot LayoutSlot "{B30CE2375323B204}" {
+        VerticalAlign 3
+       }
+       AllowWidthOverride 1
+       WidthOverride 4
+       {
+        ImageWidgetClass "{5BA521B4218797AB}" {
+         Name "Strip"
+         Slot AlignableSlot "{285D7471FC5686B8}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         Color 1 0.78 0.17 1
+        }
+       }
+      }
+      SizeLayoutWidgetClass "{6B0E4F375C626175}" {
+       Name "BadgeSize"
+       Slot LayoutSlot "{B3009E68B24B7745}" {
+        VerticalAlign 1
+        Padding 12 12 0 12
+       }
+       AllowWidthOverride 1
+       WidthOverride 46
+       AllowHeightOverride 1
+       HeightOverride 46
+       {
+        OverlayWidgetClass "{EC276A431D9BDF0F}" {
+         Name "BadgeOv"
+         Slot AlignableSlot "{D41128CB586D7295}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         {
+          ImageWidgetClass "{850F6DF435DB8E17}" {
+           Name "BadgeBg"
+           Slot OverlayWidgetSlot "{1107B5067906E082}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           Texture "{3BA4B2A75ED412DC}UI/Textures/MCUIK/MCUIK_Icons.imageset"
+           Image "hex"
+           Color 1 0.78 0.17 0.2
+          }
+          ImageWidgetClass "{A2836E05595747F5}" {
+           Name "BadgeIcon"
+           Slot OverlayWidgetSlot "{27888CF36E678108}" {
+            HorizontalAlign 1
+            VerticalAlign 1
+           }
+           Texture "{3BA4B2A75ED412DC}UI/Textures/MCUIK/MCUIK_Icons.imageset"
+           Image "info"
+           Color 1 0.78 0.17 1
+           Size 25 25
+          }
+         }
+        }
+       }
+      }
+      VerticalLayoutWidgetClass "{3C7F9263B80339DA}" {
+       Name "Texts"
+       Slot LayoutSlot "{DB20A97349E59F2D}" {
+        SizeMode Fill
+        VerticalAlign 1
+        Padding 12 11 16 13
+       }
+       {
+        TextWidgetClass "{EC4A60F09A47BCF1}" {
+         Name "Title"
+         Slot LayoutSlot "{476C3DE947FAA92C}" {
+          Padding 0 0 0 2
+         }
+         Color 1 0.78 0.17 1
+         Text "AVISO"
+         "Font Size" 14
+         "Min Font Size" 10
+         "Horizontal Alignment" Left
+         FontProperties FontProperties "{29F3454F80D6DA68}" {
+          Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+         }
+        }
+        RichTextWidgetClass "{670C140D6CAE2627}" {
+         Name "Body"
+         Color 0.91 0.93 0.94 1
+         Text "Texto del aviso"
+         "Font Size" 17
+         "Min Font Size" 11
+         Wrap 1
+         FontProperties FontProperties "{94509E353A51C15B}" {
+          Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+         }
+        }
+       }
+      }
+     }
+    }
+    SizeLayoutWidgetClass "{52C7025E3017C8FB}" {
+     Name "TimeSize"
+     Slot OverlayWidgetSlot "{76B41BD3D7981F73}" {
+      HorizontalAlign 0
+      VerticalAlign 2
+     }
+     AllowWidthOverride 1
+     WidthOverride 0
+     AllowHeightOverride 1
+     HeightOverride 3
+     {
+      ImageWidgetClass "{2037EC5906637E9B}" {
+       Name "Time"
+       Slot AlignableSlot "{025C07DD86268C84}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       Color 1 0.78 0.17 0.7
+      }
+     }
+    }
+   }
+  }
+ }
+}

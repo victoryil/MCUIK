@@ -1,0 +1,5 @@
+SizeLayoutWidgetClass {
+ Name "SpacerRoot"
+ AllowHeightOverride 1
+ HeightOverride 8
+}

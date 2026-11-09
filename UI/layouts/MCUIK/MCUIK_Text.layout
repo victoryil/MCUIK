@@ -1,0 +1,11 @@
+RichTextWidgetClass {
+ Name "Text"
+ Color 0.91 0.93 0.94 1
+ Text ""
+ "Font Size" 16
+ "Min Font Size" 10
+ Wrap 1
+ FontProperties FontProperties "{C4C273632ED0B910}" {
+  Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+ }
+}

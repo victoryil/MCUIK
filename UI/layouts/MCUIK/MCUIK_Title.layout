@@ -1,0 +1,10 @@
+TextWidgetClass {
+ Name "Title"
+ Color 1 0.78 0.17 1
+ Text ""
+ "Font Size" 14
+ "Min Font Size" 10
+ FontProperties FontProperties "{D1168B09C3B5465D}" {
+  Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+ }
+}

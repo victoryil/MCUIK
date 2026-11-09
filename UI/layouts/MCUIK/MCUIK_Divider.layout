@@ -1,0 +1,15 @@
+SizeLayoutWidgetClass {
+ Name "DividerRoot"
+ AllowHeightOverride 1
+ HeightOverride 1
+ {
+  ImageWidgetClass "{96C9A4C61B83A0A0}" {
+   Name "Line"
+   Slot AlignableSlot "{F6C2C7C52E1BCD63}" {
+    HorizontalAlign 3
+    VerticalAlign 3
+   }
+   Color 1 1 1 0.1
+  }
+ }
+}

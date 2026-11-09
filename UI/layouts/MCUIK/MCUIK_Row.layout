@@ -1,0 +1,44 @@
+HorizontalLayoutWidgetClass {
+ Name "RowRoot"
+ {
+  ImageWidgetClass "{2EE6FDE5B7EEB1BC}" {
+   Name "Icon"
+   Slot LayoutSlot "{64D17A8D71A06B7D}" {
+    VerticalAlign 1
+    Padding 0 0 8 0
+   }
+   Texture "{3BA4B2A75ED412DC}UI/Textures/MCUIK/MCUIK_Icons.imageset"
+   Image "dot"
+   Color 0.56 0.63 0.68 1
+   Size 16 16
+  }
+  TextWidgetClass "{AFE3BF4083E08725}" {
+   Name "Label"
+   Slot LayoutSlot "{CCC3E7249DDE3789}" {
+    SizeMode Fill
+    VerticalAlign 1
+   }
+   Color 0.56 0.63 0.68 1
+   Text "Etiqueta"
+   "Font Size" 16
+   "Min Font Size" 10
+   FontProperties FontProperties "{68C88AC035B3B0A8}" {
+    Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+   }
+  }
+  TextWidgetClass "{810D370E26738B76}" {
+   Name "Value"
+   Slot LayoutSlot "{20C79B449008E543}" {
+    VerticalAlign 1
+    Padding 8 0 0 0
+   }
+   Color 0.91 0.93 0.94 1
+   Text ""
+   "Font Size" 16
+   "Min Font Size" 10
+   FontProperties FontProperties "{026E8A0021779077}" {
+    Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+   }
+  }
+ }
+}

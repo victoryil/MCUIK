@@ -1,0 +1,151 @@
+SizeLayoutWidgetClass {
+ Name "DialogueRoot"
+ AllowWidthOverride 1
+ WidthOverride 860
+ {
+  OverlayWidgetClass "{00157066820C7BA2}" {
+   Name "Ov"
+   Slot AlignableSlot "{9FF05406140E0910}" {
+    HorizontalAlign 3
+    VerticalAlign 3
+   }
+   {
+    ImageWidgetClass "{8E11F500A0E7F897}" {
+     Name "Bg"
+     Slot OverlayWidgetSlot "{83EEA3D89A6F666B}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Color 0.03 0.045 0.058 0.86
+    }
+    HorizontalLayoutWidgetClass "{B096D29C89464506}" {
+     Name "Row"
+     Slot OverlayWidgetSlot "{11A5CF94BFFB27F4}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      SizeLayoutWidgetClass "{B8723C540C02084D}" {
+       Name "StripSize"
+       Slot LayoutSlot "{03EC18A865EA2762}" {
+        VerticalAlign 3
+       }
+       AllowWidthOverride 1
+       WidthOverride 4
+       {
+        ImageWidgetClass "{C511E652408DF954}" {
+         Name "Strip"
+         Slot AlignableSlot "{ABBD69A510602A28}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         Color 1 0.78 0.17 1
+        }
+       }
+      }
+      SizeLayoutWidgetClass "{A1854A1F3A58BAF1}" {
+       Name "PortraitSize"
+       Slot LayoutSlot "{0BA0AABD0BEED137}" {
+        VerticalAlign 1
+        Padding 16 14 0 14
+       }
+       AllowWidthOverride 1
+       WidthOverride 64
+       AllowHeightOverride 1
+       HeightOverride 64
+       {
+        OverlayWidgetClass "{A02DA906274A7E5B}" {
+         Name "PortraitOv"
+         Slot AlignableSlot "{4BF54209A49AE8F0}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         {
+          ImageWidgetClass "{1E1D2134612AE9CC}" {
+           Name "PortraitBg"
+           Slot OverlayWidgetSlot "{7375DEEA8BEDCCC6}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           Texture "{3BA4B2A75ED412DC}UI/Textures/MCUIK/MCUIK_Icons.imageset"
+           Image "hex"
+           Color 1 0.78 0.17 0.2
+          }
+          ImageWidgetClass "{15D797E7BF039254}" {
+           Name "PortraitIcon"
+           Slot OverlayWidgetSlot "{768AE9C9DAB29850}" {
+            HorizontalAlign 1
+            VerticalAlign 1
+           }
+           Texture "{3BA4B2A75ED412DC}UI/Textures/MCUIK/MCUIK_Icons.imageset"
+           Image "radio"
+           Color 1 0.78 0.17 1
+           Size 35 35
+          }
+         }
+        }
+       }
+      }
+      VerticalLayoutWidgetClass "{AB7A3258264F8DEC}" {
+       Name "Texts"
+       Slot LayoutSlot "{77DBF26EA359C839}" {
+        SizeMode Fill
+        VerticalAlign 1
+        Padding 16 12 20 14
+       }
+       {
+        TextWidgetClass "{B4908D19C3860F7F}" {
+         Name "Speaker"
+         Slot LayoutSlot "{7855830173A00EA0}" {
+          Padding 0 0 0 4
+         }
+         Color 1 0.78 0.17 1
+         Text "Quien habla"
+         "Font Size" 17
+         "Min Font Size" 11
+         FontProperties FontProperties "{155084CC8A81DF14}" {
+          Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+         }
+        }
+        RichTextWidgetClass "{BF8C5564DEF3ED71}" {
+         Name "Line"
+         Color 0.91 0.93 0.94 1
+         Text "Lo que dice"
+         "Font Size" 21
+         "Min Font Size" 15
+         Wrap 1
+         FontProperties FontProperties "{9494C8AE85E4B442}" {
+          Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+          OutlineSize 1
+          OutlineColor 0 0 0 0.6
+         }
+        }
+       }
+      }
+     }
+    }
+    SizeLayoutWidgetClass "{389893E74061FC00}" {
+     Name "TimeSize"
+     Slot OverlayWidgetSlot "{0281A8962CEDE04D}" {
+      HorizontalAlign 0
+      VerticalAlign 2
+     }
+     AllowWidthOverride 1
+     WidthOverride 0
+     AllowHeightOverride 1
+     HeightOverride 3
+     {
+      ImageWidgetClass "{B5C47D101896102F}" {
+       Name "Time"
+       Slot AlignableSlot "{834E37E004C2F1EB}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       Color 1 0.78 0.17 0.7
+      }
+     }
+    }
+   }
+  }
+ }
+}
