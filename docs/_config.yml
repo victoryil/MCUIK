@@ -17,4 +17,4 @@ gh_edit_repository: "https://github.com/victoryil/MCUIK"
 gh_edit_branch: "main"
 gh_edit_source: docs
 gh_edit_view_mode: "tree"
-footer_content: "MCUIK · <a href=\"https://reforger.armaplatform.com/workshop/B8DFCB8639E9DA37\">Workshop</a> · <a href=\"https://github.com/victoryil/MCUIK\">Código en GitHub</a> · <a href=\"https://github.com/victoryil/MCUIK/blob/main/llms.txt\">llms.txt</a> (resumen para IA)"
+footer_content: "MCUIK · <a href=\"https://reforger.armaplatform.com/workshop/B8DFCB8639E9DA37\">Workshop</a> · <a href=\"https://github.com/victoryil/MCUIK\">Código en GitHub</a> · <a href=\"https://github.com/victoryil/MCUIK/blob/main/llms.txt\">llms.txt</a> (resumen para IA) · Licencia <a href=\"https://github.com/victoryil/MCUIK/blob/main/LICENSE\">MIT</a>"

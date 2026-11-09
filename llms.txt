@@ -21,6 +21,7 @@ Key facts for agents:
 
 
 ## Links
+- License: MIT (https://github.com/victoryil/MCUIK/blob/main/LICENSE)
 - Workshop: https://reforger.armaplatform.com/workshop/B8DFCB8639E9DA37
 - Source code: https://github.com/victoryil/MCUIK
 - Docs website: https://victoryil.github.io/MCUIK/

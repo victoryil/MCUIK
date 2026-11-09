@@ -73,3 +73,7 @@ if (!c)
 - las constantes de `MCUIK_Res.c`.
 
 Después hay que abrir el proyecto en Workbench una vez para que registre los recursos nuevos.
+
+## Licencia
+
+[MIT](LICENSE): puedes usarlo, modificarlo y redistribuirlo (también en tus mods) manteniendo el aviso de copyright.
